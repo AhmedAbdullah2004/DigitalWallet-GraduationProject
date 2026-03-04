@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'theme.dart';
+import 'screens/notifications/notifications_screen.dart';
 
 void main() => runApp(const WalletApp());
 
@@ -12,14 +13,7 @@ class WalletApp extends StatelessWidget {
       title: 'Digital Wallet',
       theme: AppTheme.theme,
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            '✅ App is working!',
-            style: TextStyle(fontSize: 24, color: AppColors.primary),
-          ),
-        ),
-      ),
+      home: NotificationsScreen(),
     );
   }
 }
